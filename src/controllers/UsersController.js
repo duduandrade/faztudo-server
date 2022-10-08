@@ -35,7 +35,7 @@ class UsersController {
     try {
       //const user = await User.create(req.body);
 
-      const { email, password} = req.body;
+      const { email, password } = req.body;
 
       const user = await User.findOne({ email });
 
@@ -82,7 +82,7 @@ class UsersController {
   async destroy(req, res) {
     try {
       const { id } = req.params;
-      const user = await User.findById({ id });
+      const user = await User.findOne ({ id });
 
       if (!user) {
         return res.status(404).json();

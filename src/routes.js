@@ -11,8 +11,6 @@ routes.post('/sessions', SessionsController.create);
 
 routes.use(auth);
 
-// RESTFull
-
 routes.get("/users/", UsersController.index);
 routes.get("/users/:id", UsersController.show);
 routes.post("/users", UsersController.create);
