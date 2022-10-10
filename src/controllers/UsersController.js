@@ -9,6 +9,7 @@ class UsersController {
       const users = await User.find();
 
       return res.json(users);
+      
     } catch (err) {
       console.error(err);
       return res.status(500).json({ error: "Internal Server Error" });
@@ -25,6 +26,7 @@ class UsersController {
       }
 
       return res.json(user);
+
     } catch (err) {
       console.error(err);
       return res.status(500).json({ error: "Internal Server Error" });
@@ -33,8 +35,6 @@ class UsersController {
 
   async create(req, res) {
     try {
-      //const user = await User.create(req.body);
-
       const { email, password } = req.body;
 
       const user = await User.findOne({ email });

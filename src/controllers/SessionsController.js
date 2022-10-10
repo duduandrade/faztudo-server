@@ -17,9 +17,9 @@ class SessionController {
             return res.status(401).json({ error: "User / Password invalid."});
         }
 
-        if (!checkPassword(user, password)) {
-            return res.status(401).json({ error: "User / Password invalid."});
-        }
+        const passwordChecked = await checkPassword(user, password);
+
+        if (!passwordChecked) return res.status(401).json({ message: "User / Password Invalid." });
 
         const { id } = user;
 
