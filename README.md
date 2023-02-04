@@ -1,4 +1,4 @@
-# Título do Projeto
+# FazTudo - API Rest
  API Rest com Node.js do meu projeto de conclusão de curso em uma versão otimizada.
  Anteriormente back-end desenvolvido em PHP se comunicava com front-end através de chamadas diretas de funções 
  Progressive Web App com o intuito de ser o ponto de encontro entre profissionais de serviços gerais relacionados a afazeres domésticos e usuários que necessitam destes serviços, projetado para abranger, inicialmente, o município de Charqueadas – RS.
