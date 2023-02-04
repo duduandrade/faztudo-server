@@ -39,3 +39,8 @@
 - 🕚 Responder orçamento de serviços
 - 🕚 Finalizar serviço prestado
 - 🕚 Solicitar alteração do preço do serviço prestado
+
+
+## Modelo Entidade Relacionamento
+![Modelo ER](/assets/modelo-ER-FazTudo.png)
+
